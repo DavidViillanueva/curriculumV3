@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import CameraIcon from "@mui/icons-material/Camera";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useTranslations } from "next-intl";
+import { AvailableThemes, AvailableThemesThemeList } from "@/context/Themes";
 
 export default function ThemeButton() {
   const t = useTranslations("theme");
@@ -21,12 +22,7 @@ export default function ThemeButton() {
     event: React.MouseEvent<HTMLLIElement, MouseEvent>
   ) => {
     event.preventDefault();
-    const selectedTheme = event.currentTarget.id as
-      | "muppet"
-      | "lego"
-      | "cn"
-      | "night";
-    console.log("Selected theme:", selectedTheme);
+    const selectedTheme = event.currentTarget.id as AvailableThemes;
     setTheme(selectedTheme);
     handleClose();
   };
@@ -46,18 +42,15 @@ export default function ThemeButton() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={(event) => handleClickMenu(event)} id="muppet">
-          {t("muppet")}
-        </MenuItem>
-        <MenuItem onClick={(event) => handleClickMenu(event)} id="lego">
-          {t("lego")}
-        </MenuItem>
-        <MenuItem onClick={(event) => handleClickMenu(event)} id="cn">
-          {t("cn")}
-        </MenuItem>
-        <MenuItem onClick={(event) => handleClickMenu(event)} id="night">
-          {t("nigth")}
-        </MenuItem>
+        {AvailableThemesThemeList.map((theme) => (
+          <MenuItem
+            key={theme}
+            onClick={(event) => handleClickMenu(event)}
+            id={theme}
+          >
+            {t(theme)}
+          </MenuItem>
+        ))}
       </Menu>
     </>
   );

@@ -1,10 +1,10 @@
 import { createContext } from "react";
-import { myThemes } from "./Themes";
+import { AvailableThemes } from "./Themes";
 
 type ThemeContextType = {
   imageTheme: string;
   fontTheme: string;
-  setTheme: (theme: keyof typeof myThemes) => void;
+  setTheme: (theme: AvailableThemes) => void;
 };
 
 export const ThemeContext = createContext<ThemeContextType>({

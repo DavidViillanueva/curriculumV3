@@ -28,6 +28,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import ThemeButton from "../ui/theme-button";
 import { links } from "@/configs/links.config";
+import ThemeMenuItem from "../ui/theme-menu-item";
 const navLinks = [
   { name: "about", href: "#about" },
   { name: "skills", href: "#skills" },
@@ -77,11 +78,7 @@ export default function SiteHeader() {
               open={drawerOpen}
               onClose={toggleDrawer(false)}
             >
-              <Box
-                sx={{ width: 250 }}
-                onClick={toggleDrawer(false)}
-                onKeyDown={toggleDrawer(false)}
-              >
+              <Box sx={{ width: 250 }}>
                 <List>
                   {navLinks.map((link) => (
                     <ListItem key={tNavigation(link.name)} disablePadding>
@@ -112,6 +109,7 @@ export default function SiteHeader() {
                       <ListItemText primary="LinkedIn" />
                     </ListItemButton>
                   </ListItem>
+                  <ThemeMenuItem />
                 </List>
               </Box>
             </Drawer>
