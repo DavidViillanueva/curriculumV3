@@ -1,0 +1,107 @@
+{
+    "metadata": {
+        "title": "David Villanueva | Software Engineer",
+        "description": "Professional portfolio of David Villanueva, a Full Stack Software Engineer specialized in modern web technologies.",
+        "keywords": [
+            "software engineer",
+            "web developer",
+            "full stack",
+            "React",
+            "Next.js",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "author": "David Villanueva"
+    },
+    "navigation": {
+        "about": "About Me",
+        "skills": "Skills",
+        "experience": "Experience",
+        "contact": "Contact",
+        "resume": "Resume"
+    },
+    "hero": {
+        "title": "David Villanueva",
+        "subtitle": "Full Stack Software Engineer",
+        "description": "I build accessible, responsive, and high-performance web applications with modern technologies. Passionate about clean code and solving complex problems.",
+        "contactButton": "Contact Me",
+        "skillsButton": "View Skills"
+    },
+    "about": {
+        "title": "About Me",
+        "description1": "Full Stack Developer with experience building web applications using React, Next.js, Node, AWS, MySQL, Docker, and other technologies. I hold a university degree in Programming and am committed to continuous improvement and professional growth. I am skilled at acquiring new competencies and efficiently implementing them to deliver exceptional results.",
+        "description2": "When I'm not coding, you can find me exploring places on my motorcycle, listening to good music, or experimenting with new technologies. I'm always looking for new challenges and opportunities to grow as a developer."
+    },
+    "skills": {
+        "title": "Skills & Experience",
+        "subtitle": "I have worked with a variety of technologies and frameworks throughout my career.",
+        "items": {
+            "0": "JavaScript",
+            "1": "TypeScript",
+            "2": "React",
+            "3": "Next.js",
+            "4": "Node.js",
+            "5": "AWS",
+            "6": "Docker",
+            "7": "MySQL",
+            "8": "GraphQL",
+            "9": "MaterialUI"
+        }
+    },
+    "theme": {
+        "theme": "Theme",
+        "muppet": "Muppets",
+        "lego": "Lego",
+        "nigth": "The Nightmare Before Christmas",
+        "cn": "Cartoon Network"
+    },
+    "experience": {
+        "title": "Work Experience",
+        "subtitle": "My professional journey in software development.",
+        "jobType": "Full Time",
+        "items": {
+            "0": {
+                "title": "Software Engineer",
+                "company": "Bitlogic",
+                "period": "10/2021 - Present",
+                "description": "Developed applications in React. Developed applications in Next.js. Maintenance and new features in Angular. Maintenance and new features in NestJs. Development using AWS. Implementation of reusable components (Angular/React). Participated in 4 projects with different technologies."
+            },
+            "1": {
+                "title": "Software Engineer",
+                "company": "Reputacion Digital",
+                "period": "12/2020 - 10/2021",
+                "description": "Deployed the main system using Docker, resulting in reduced server costs (ELK). Promoted the use of Redux to streamline code maintenance and scalability."
+            }
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "I’m currently open to new opportunities and collaborations. Feel free to contact me!",
+        "emailButton": "gdavidv1997@gmail.com",
+        "linkedinButton": "LinkedIn",
+        "githubButton": "GitHub",
+        "form": {
+            "bodyEmail": "Hello David, I would like to contact you regarding...",
+            "download": "Download",
+            "title": "Contact Form",
+            "email": "Email",
+            "emailHelperText": "To be able to respond to you!",
+            "emailSuccess": "Successfully sent, I will respond shortly.",
+            "emailError": "An error occurred, please try again later.",
+            "name": "Name",
+            "buttons": {
+                "send": "Send"
+            }
+        }
+    },
+    "footer": {
+        "copyright": "© 2024 David Villanueva. All rights reserved."
+    },
+    "languageSwitcher": {
+        "label": "Language",
+        "languages": {
+            "en": "English",
+            "es": "Spanish"
+        }
+    }
+}

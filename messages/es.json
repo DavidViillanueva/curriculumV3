@@ -1,0 +1,107 @@
+{
+    "metadata": {
+        "title": "David Villanueva | Ingeniero de Software",
+        "description": "Portafolio profesional de David Villanueva, una Ingeniero de Software Full Stack especializado en tecnologías web modernas.",
+        "keywords": [
+            "ingeniero de software",
+            "desarrollador web",
+            "full stack",
+            "React",
+            "Next.js",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "author": "David Villanueva"
+    },
+    "navigation": {
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "experience": "Experiencia",
+        "contact": "Contacto",
+        "resume": "Currículum"
+    },
+    "hero": {
+        "title": "David Villanueva",
+        "subtitle": "Ingeniero de Software Full Stack",
+        "description": "Construyo aplicaciones web accesibles, responsivas y de alto rendimiento con tecnologías modernas. Apasionado por el código limpio, y la resolución de problemas complejos.",
+        "contactButton": "Contáctame",
+        "skillsButton": "Ver Habilidades"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "description1": "Desarrollador Full Stack con experiencia en la creación de aplicaciones web utilizando React, Next.js, Node, AWS, MySQL, Docker y otras tecnologías. Poseo un título universitario en Programación y me comprometo a la mejora continua y al crecimiento profesional. Soy hábil en la adquisición de nuevas competencias y en la implementación eficiente de estas para generar resultados excepcionales. ",
+        "description2": "Cuando no estoy programando, puedes encontrarme recorriendo lugares en mi motocicleta, escuchando buena musica o experimentando con nuevas tecnologías. Siempre estoy buscando nuevos desafíos y oportunidades para crecer como desarrollador."
+    },
+    "skills": {
+        "title": "Habilidades y Experiencia",
+        "subtitle": "He trabajado con una variedad de tecnologías y frameworks a lo largo de mi carrera.",
+        "items": {
+            "0": "JavaScript",
+            "1": "TypeScript",
+            "2": "React",
+            "3": "Next.js",
+            "4": "Node.js",
+            "5": "AWS",
+            "6": "Docker",
+            "7": "MySQL",
+            "8": "GraphQL",
+            "9": "MaterialUI"
+        }
+    },
+    "theme": {
+        "theme": "Tema",
+        "muppet": "Muppets",
+        "lego": "Lego",
+        "nigth": "El extraño mundo de Jack",
+        "cn": "Cartoon Network"
+    },
+    "experience": {
+        "title": "Experiencia Laboral",
+        "subtitle": "Mi trayectoria profesional en desarrollo de software.",
+        "jobType": "Tiempo completo",
+        "items": {
+            "0": {
+                "title": "Ingeniero de Software",
+                "company": "Bitlogic",
+                "period": "10/2021 - Presente",
+                "description": "Desarrollo de aplicaciones en React. Desarrollo de aplicaciones en Next.js. Mantenimiento y nuevas funcionalidades en Angular. Mantenimiento y nuevas funcionalidades en NestJs. Desarrollo utilizando AWS. Implementación de componentes reutilizables (Angular/React). Participación en 4 proyectos con distintas tecnologías."
+            },
+            "1": {
+                "title": "Ingeniero de Software",
+                "company": "Reputacion Digital",
+                "period": "12/2020 - 10/2021",
+                "description": "Realicé el despliegue del sistema principal utilizando Docker, logrando una disminución en los costos de servidores (ELK). Impulsé el uso de Redux para agilizar el mantenimiento del código y la escalabilidad del mismo."
+            }
+        }
+    },
+    "contact": {
+        "title": "Ponte en Contacto",
+        "subtitle": "Actualmente estoy abierto a nuevas oportunidades y colaboraciones. ¡No dudes en contactarme!",
+        "emailButton": "gdavidv1997@gmail.com",
+        "linkedinButton": "LinkedIn",
+        "githubButton": "GitHub",
+        "form": {
+            "bodyEmail": "Mensaje",
+            "download": "Descargar",
+            "title": "Ponte en Contacto",
+            "email": "Email",
+            "emailHelperText": "Para poder responderte!",
+            "emailSuccess": "Se ha enviado correctamente, en breve te respondo.",
+            "emailError": "Ocurrió un error, intenta nuevamente más tarde.",
+            "name": "Nombre",
+            "buttons": {
+                "send": "Enviar"
+            }
+        }
+    },
+    "footer": {
+        "copyright": "© {year} David Villanueva. Todos los derechos reservados."
+    },
+    "languageSwitcher": {
+        "label": "Idioma",
+        "languages": {
+            "en": "Inglés",
+            "es": "Español"
+        }
+    }
+}
