@@ -109,6 +109,17 @@ export default function SiteHeader() {
                       <ListItemText primary="LinkedIn" />
                     </ListItemButton>
                   </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemButton
+                      component="a"
+                      href={links.cv}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <DescriptionIcon sx={{ mr: 1 }} fontSize="small" />
+                      <ListItemText primary={tNavigation("resume")} />
+                    </ListItemButton>
+                  </ListItem>
                   <ThemeMenuItem />
                 </List>
               </Box>
@@ -167,7 +178,7 @@ export default function SiteHeader() {
                 href={links.cv}
                 target="_blank"
               >
-                Resume
+                {tNavigation("resume")}
               </Button>
               <ThemeButton />
             </Box>
