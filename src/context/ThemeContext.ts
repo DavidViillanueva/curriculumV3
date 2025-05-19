@@ -2,7 +2,7 @@ import { createContext } from "react";
 import { AvailableThemes } from "./Themes";
 
 type ThemeContextType = {
-  imageTheme: string;
+  imageTheme: string | undefined;
   fontTheme: string;
   setTheme: (theme: AvailableThemes) => void;
 };

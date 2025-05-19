@@ -1,22 +1,26 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { createTheme, ThemeProvider } from "@mui/material";
-import { myThemes } from "./Themes";
+import { getRandomThemeKey, myThemes, Theme } from "./Themes";
 import { bangers, patrickHand } from "@/fonts";
 
 export function MyThemeProvider({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const [themeState, setThemeState] = useState(myThemes.muppet);
+  const [themeState, setThemeState] = useState<Theme | null>(null);
+
+  useEffect(() => {
+    const randomTheme = getRandomThemeKey();
+    setThemeState(myThemes[randomTheme]);
+  }, []);
 
   const contextValue = useMemo(
     () => ({
-      imageTheme: themeState.image,
+      imageTheme: themeState?.image,
       fontTheme: "Roboto",
       setTheme: (theme: keyof typeof myThemes) => {
-        console.log({ theme: myThemes[theme] });
         setThemeState(myThemes[theme]);
       },
     }),
@@ -26,10 +30,10 @@ export function MyThemeProvider({
   const theme = useMemo(
     () =>
       createTheme({
-        palette: themeState.palette,
+        palette: themeState?.palette,
         typography: {
-          fontFamily: themeState.font,
-          fontSize: themeState.fontSize,
+          fontFamily: themeState?.font,
+          fontSize: themeState?.fontSize,
           h1: {
             fontWeight: 700,
           },

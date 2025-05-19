@@ -10,7 +10,6 @@ import {
   Avatar,
 } from "@mui/material";
 import { Mail as MailIcon, Work as WorkIcon } from "@mui/icons-material";
-import BackgroundPattern from "@/components/ui/background-pattern";
 import { useTranslations } from "next-intl";
 import { useContext } from "react";
 import { ThemeContext } from "@/context/ThemeContext";
@@ -30,7 +29,6 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      <BackgroundPattern />
       <Container>
         <Grid container spacing={4}>
           <Grid

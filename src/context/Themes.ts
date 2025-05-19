@@ -17,16 +17,73 @@ export interface Theme {
   };
 }
 
-export type AvailableThemes = "muppet" | "lego" | "cn" | "nigth";
+export type AvailableThemes = "muppet" | "lego" | "cn" | "nigth" | "default";
 
 export const AvailableThemesThemeList: AvailableThemes[] = [
   "muppet",
   "lego",
   "cn",
   "nigth",
+  "default",
 ];
 
+export function getRandomThemeKey(): AvailableThemes {
+  const randomIndex = Math.floor(
+    Math.random() * AvailableThemesThemeList.length
+  );
+  return AvailableThemesThemeList[randomIndex];
+}
+
 export const myThemes: { [key in AvailableThemes]: Theme } = {
+  default: {
+    image: "./default.jpg",
+    font: "Roboto, sans-serif",
+    fontSize: 14,
+    palette: {
+      mode: "light",
+      primary: {
+        main: "#9c27b0", // Violeta fuerte
+        light: "#d05ce3", // Violeta claro
+        dark: "#6a0080", // Violeta oscuro
+        contrastText: "#ffffff", // Blanco para contraste
+      },
+      secondary: {
+        main: "#f06292", // Rosa fuerte
+        light: "#f8a5c2", // Rosa claro
+        dark: "#ba2d65", // Rosa oscuro
+        contrastText: "#ffffff",
+      },
+      background: {
+        default: "#fdf2ff", // Fondo lavanda pálido
+        paper: "#ffffff", // Blanco para tarjetas, papeles
+      },
+      text: {
+        primary: "#2e003e", // Violeta oscuro profundo
+        secondary: "#6f4a79", // Lavanda oscuro
+        disabled: "#bdaac5", // Gris violáceo claro
+      },
+      error: {
+        main: "#e53935", // Rojo fuerte
+        light: "#ff6f60",
+        dark: "#ab000d",
+        contrastText: "#ffffff",
+      },
+      warning: {
+        main: "#ffb74d", // Naranja suave
+        light: "#ffe97d",
+        dark: "#c88719",
+        contrastText: "#000000",
+      },
+      success: {
+        main: "#81c784", // Verde éxito
+        light: "#b2fab4",
+        dark: "#519657",
+        contrastText: "#ffffff",
+      },
+      divider: "#e0cfe6", // Línea sutil rosada/violeta
+    },
+  },
+
   muppet: {
     image: "./muppet.jpeg",
     font: "var(--font-muppet), cursive",

@@ -6,7 +6,6 @@ import {
   LinkedIn as LinkedInIcon,
   GitHub as GitHubIcon,
 } from "@mui/icons-material";
-import BackgroundPattern from "@/components/ui/background-pattern";
 import { useTranslations } from "next-intl";
 import ContactDialog from "../layout/contact-dialog";
 import { useState } from "react";
@@ -35,7 +34,6 @@ export default function Contact() {
           overflow: "hidden",
         }}
       >
-        <BackgroundPattern />
         <Container>
           <Box sx={{ maxWidth: 800, mx: "auto", textAlign: "center", mb: 6 }}>
             <Typography

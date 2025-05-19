@@ -53,7 +53,8 @@
         "muppet": "Muppets",
         "lego": "Lego",
         "nigth": "The Nightmare Before Christmas",
-        "cn": "Cartoon Network"
+        "cn": "Cartoon Network",
+        "default": "Human"
     },
     "experience": {
         "title": "Work Experience",

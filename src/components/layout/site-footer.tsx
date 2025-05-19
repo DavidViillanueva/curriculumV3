@@ -1,8 +1,9 @@
 "use client";
 
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Link as MuiLink, Typography } from "@mui/material";
 import { Code as CodeIcon } from "@mui/icons-material";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function SiteFooter() {
   const t = useTranslations("footer");
@@ -33,6 +34,22 @@ export default function SiteFooter() {
               {t("copyright", { year: new Date().getFullYear() })}
             </Typography>
           </Box>
+          <div className="flex flex-row gap-4">
+            <MuiLink
+              href={`es`}
+              component={Link}
+              className={`font-sans text-sm font-small mr-1 mx-3 :hover:underline no-underline`}
+            >
+              Español
+            </MuiLink>
+            <MuiLink
+              href={`en`}
+              component={Link}
+              className="font-sans text-sm font-small  mr-1 :hover:underline no-underline"
+            >
+              English
+            </MuiLink>
+          </div>
         </Box>
       </Container>
     </Box>
