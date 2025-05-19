@@ -54,6 +54,19 @@ export default function SiteHeader() {
       elevation={1}
       sx={{ borderRadius: 0, boxShadow: 0 }}
     >
+      <meta
+        name="title"
+        property="og:title"
+        content="Curriculum Villanueva David"
+      />
+      <meta name="image" property="og:image" content="/curriculum-meta.png" />
+      <meta
+        name="description"
+        property="og:description"
+        content="Curriculum de presentacion digital de Villanueva David"
+      />
+      <meta name="author" content="David Villanueva" />
+      <link rel="icon" href="/favicon.png" />
       <Toolbar>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <CodeIcon />
