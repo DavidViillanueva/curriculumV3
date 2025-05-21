@@ -29,7 +29,7 @@
     },
     "about": {
         "title": "Sobre Mí",
-        "description1": "Desarrollador Full Stack con experiencia en la creación de aplicaciones web utilizando React, Next.js, Node, AWS, MySQL, Docker y otras tecnologías. Poseo un título universitario en Programación y me comprometo a la mejora continua y al crecimiento profesional. Soy hábil en la adquisición de nuevas competencias y en la implementación eficiente de estas para generar resultados excepcionales. ",
+        "description1": "Desarrollador Full Stack con experiencia en la creación de aplicaciones web utilizando React, Next.js, Node, AWS, MySQL, Docker y otras tecnologías. Cuento con un título universitario en Programación, comprometido a la mejora continua y al crecimiento profesional. Me considero hábil en la adquisición de nuevas competencias y en la implementación eficiente de estas para generar resultados excepcionales. ",
         "description2": "Cuando no estoy programando, puedes encontrarme recorriendo lugares en mi motocicleta, escuchando buena musica o experimentando con nuevas tecnologías. Siempre estoy buscando nuevos desafíos y oportunidades para crecer como desarrollador."
     },
     "skills": {
@@ -71,7 +71,7 @@
                 "title": "Ingeniero de Software",
                 "company": "Reputacion Digital",
                 "period": "12/2020 - 10/2021",
-                "description": "Realicé el despliegue del sistema principal utilizando Docker, logrando una disminución en los costos de servidores (ELK). Impulsé el uso de Redux para agilizar el mantenimiento del código y la escalabilidad del mismo."
+                "description": "Desplegue del sistema principal utilizando Docker, logrando una disminución en los costos de servidores (ELK). Impulsé el uso de Redux para agilizar el mantenimiento del código y la escalabilidad del mismo."
             }
         }
     },
